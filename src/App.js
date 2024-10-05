@@ -6,6 +6,7 @@ import About from "./components/About";
 import NavBar from "./components/Navbar";
 /* import Page404 from "./components/Page404"; */
 import RoutProps from "./components/RoutProps";
+import Filter from "./components/filters";
 
 export default function App(){
   return(
@@ -17,6 +18,7 @@ export default function App(){
         <Route path="/about" element={<About/>}/>
         {/* <Route path="/*" element={<Page404/>}/> */}
           <Route path="/RoutProps/:name" element={<RoutProps />} />
+          <Route path="/Filter" element={<Filter />} />
         <Route path="/*" element={<Navigate to="/" />}/>
       </Routes>
       </BrowserRouter>

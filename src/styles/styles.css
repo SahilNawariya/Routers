@@ -12,5 +12,8 @@
     font-size: 25px;
 }
 .navlink:hover{
-    color: aqua;
+    color: rgb(10, 112, 112);
+}
+.navebar .active{
+    color: rgb(168, 181, 176);
 }

@@ -4,15 +4,18 @@ import '../styles/styles.css'
 export default function NavBar(){
 
     return(
-        <Container>
+        <div>
             <ul className="navebar">
-                <li><NavLink className="navlink" to="/about">About</NavLink></li>
+                
                 <li><NavLink className="navlink" to="/">Home</NavLink></li>
+                <li><NavLink className="navlink" to="/about">About</NavLink></li>
                 <li><NavLink className="navlink" to="/contact">Contact US</NavLink></li>
+                <li><NavLink className="navlink" to="/Filter">filters</NavLink></li>
                   
             </ul>
-        </Container>
+        </div>
         
     )
  
 }
+/* style={({ isActive }) => { return { backgroundColor: 'green' } } */
