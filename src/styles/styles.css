@@ -1,0 +1,16 @@
+.navebar{
+    text-align: right;
+}
+.navebar li{
+    display: inline-block;
+    padding:10px 5px;
+}
+.navlink{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+}
+.navlink:hover{
+    color: aqua;
+}
