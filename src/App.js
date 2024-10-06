@@ -7,6 +7,11 @@ import NavBar from "./components/Navbar";
 /* import Page404 from "./components/Page404"; */
 import RoutProps from "./components/RoutProps";
 import Filter from "./components/filters";
+import Contact from "./components/Contact";
+import Company from "./components/Company";
+import Chanel from "./components/Chanel";
+import Other from "./components/Other";
+
 
 export default function App(){
   return(
@@ -18,7 +23,12 @@ export default function App(){
         <Route path="/about" element={<About/>}/>
         {/* <Route path="/*" element={<Page404/>}/> */}
           <Route path="/RoutProps/:name" element={<RoutProps />} />
-          <Route path="/Filter" element={<Filter />} />
+          <Route path="/Filter" element={<Filter/>} />
+          <Route path="/Contact/" element={<Contact/>} >
+            <Route path="company" element={<Company/>}/>
+            <Route path="Chanel" element={<Chanel/>}/>
+            <Route path="Other" element={<Other/>}/>
+          </Route>
         <Route path="/*" element={<Navigate to="/" />}/>
       </Routes>
       </BrowserRouter>
