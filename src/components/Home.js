@@ -15,7 +15,7 @@ export default function Home(){
         }
     } */
     return(
-        <Container>
+        <div>
             <h1>Home Page</h1>
             <p>This Is a Home Page Of Our Awesome App</p>
             <p>and Here we are Learning About Routes</p>
@@ -26,6 +26,6 @@ export default function Home(){
             <button onClick={() => navToPage()}>Go to Filter Page</button><br /> */}
            {/*  <button onClick={()=>Navigate('/about')}>Go to About</button><br />
             <button onClick={() => Navigate('/filter')}>Go to Filter Page</button><br /> */}
-        </Container>
+        </div>
     )
 }
